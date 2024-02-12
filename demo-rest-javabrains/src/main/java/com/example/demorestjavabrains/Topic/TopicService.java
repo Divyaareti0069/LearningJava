@@ -23,7 +23,7 @@ public class TopicService {
 
 	public Topics getSpecificTopic(int id) {
 		
-		return topics.stream().filter(t->t.getId==id).findFirst().orElse(null);
+		return topics.stream().filter(t->t.getId()==id).findFirst().orElse(null);
 	}
 
 	
